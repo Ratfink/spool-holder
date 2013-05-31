@@ -1,4 +1,4 @@
-inch = 25.4;
+include <units.scad>;
 
 module _solder_spool(h, r, ir, sr, thickness, tr, th) {
 	// Spool
