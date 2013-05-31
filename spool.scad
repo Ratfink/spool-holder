@@ -1,8 +1,9 @@
+include <colors.scad>;
 include <units.scad>;
 
 module _solder_spool(h, r, ir, sr, thickness, tr, th) {
 	// Spool
-	color([.9, .9, .9])
+	color(solder_spool_color)
 	difference() {
 		// Body
 		union() {
@@ -51,7 +52,7 @@ module _solder_spool(h, r, ir, sr, thickness, tr, th) {
 	}
 
 	// Solder
-	color([.6, .6, .5])
+	color(solder_color)
 	difference() {
 		translate([0, 0, thickness])
 		cylinder(h = h - 2*thickness, r = sr);
