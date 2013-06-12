@@ -21,5 +21,4 @@ module cone_bushing(h = 7/8*inch, r1 = 5/8*inch, r2 = 3/16*inch,
 	}
 }
 
-nut(sae5f16, center=true);
 cone_bushing();
